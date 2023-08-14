@@ -18,12 +18,23 @@ header {
     text-align: right;
 }
 h3 {
+    font-weight: 400;
+    font-size: 12px;
     text-align: center;
-    margin-top: 20px;
+    background-color: grey;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    white-space: normal; /* Enable word wrapping */
+    margin-bottom:20px;
 }
+
+
 table {
-     border: 1px solid lightblue;
-     margin: 25px auto; /* Center horizontally */
+
+     border-collapse: separate; 
+     border-spacing: 1px; 
+     margin: 25px auto; 
      font-size: 0.9em;
      font-family: sans-serif;
      min-width: 400px;
@@ -119,40 +130,56 @@ flex-direction: column;
 align-items: center;
 text-align: left;
 margin-top: 10px;
-padding: 15px;
+padding: 35px;
 background-color: lightblue;
 border: 1px solid #ccc;
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 border-radius: 5px;
 max-width: 400px;
 margin: 50px auto;
+border: 1px solid #009879;
+
 }
 
+#attendForm{
+margin-top:-20px;
+width: 100% !important;
+max-width: 100%; 
+
+}
 #canvasContainer  {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh; 
+    border-radius: 10px;
+    position: relative; /* Add this for positioning the pseudo-element */
+    overflow: hidden; /* Hide overflowing pseudo-element */
+ 
 }
 
-   
 
-#attendanceChart{
-    width: 60%;
-    max-width: 60%;
+#attendanceChart {
+    width: 80%;
+    max-width: 80%;
     height: 50vh;
     max-height: 100%; 
     border: 1px solid #ddd;
     box-sizing: border-box;
 }
 
-#reset{
+#reset {
     float: right;
-    max-height:50px;
+    max-height: 50px;
 }
 
-#reset button{
+#reset button {
     background-color: #009879 !important;
+}
+caption {
+    background-image:  linear-gradient(to top, lightblue, #fff);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 
